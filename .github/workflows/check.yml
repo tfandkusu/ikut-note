@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
