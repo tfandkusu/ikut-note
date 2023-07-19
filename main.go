@@ -15,5 +15,7 @@ func main() {
 		})
 	})
 	err := router.Run(":4456")
-	fmt.Println(err)
+	if err != nil {
+		fmt.Println(err)
+	}
 }
