@@ -14,5 +14,8 @@ func main() {
 			"message": "Hello World",
 		})
 	})
-	router.Run(":4456")
+	err := router.Run(":4456")
+	if err != nil {
+		fmt.Println(err)
+	}
 }
