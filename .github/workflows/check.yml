@@ -23,7 +23,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           go_version: '1.20'
-          reporter: 'github-pr-check'
+          reporter: 'github-pr-review'
           level: error
       - run: go build
       - run: test -e ikut-note
