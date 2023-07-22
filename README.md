@@ -50,6 +50,7 @@
 
 # 開発環境
 
-- Windows/Mac デスクトップアプリとして開発する。
-- [Wails](https://wails.io/) を使い、サーバサイドが Go 言語の会社に転職した私の Go 言語の学習を兼ねる。
-- Electron と同様に GUI は Web 技術で作ることになる。そこはいつもの Flutter Web を使う。
+- Flutter Web による Web アプリとして作成する
+- ディレクトリの指定と一覧の取得は　[showDirectoryPicker](https://developer.mozilla.org/ja/docs/Web/API/Window/showDirectoryPicker) で行う。
+- シーンと時刻は Firestore に保存する。Google ログインで個人を識別する
+- Android エンジニアだがサーバサイドが Go 言語の会社に転職したので、Go 言語を使いたい件は諦める。
