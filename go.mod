@@ -1,4 +1,4 @@
-module changeme
+module ikut-note
 
 go 1.18
 

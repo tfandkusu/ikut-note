@@ -18,9 +18,6 @@ jobs:
       - uses: actions/setup-go@v4
         with:
           go-version: '1.20'
-      - run: go install github.com/wailsapp/wails/v2/cmd/wails@latest
-      - run: wails doctor
-      - run: wails build
       - name: golangci-lint
         uses: reviewdog/action-golangci-lint@v2
         with:
@@ -28,3 +25,5 @@ jobs:
           go_version: '1.20'
           reporter: 'github-pr-review'
           level: info
+      - run: go build
+      - run: test -e ikut-note
